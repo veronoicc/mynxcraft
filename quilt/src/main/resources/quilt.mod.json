@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "mixin": [
+    "mynx.mixins.json",
+    "mynx-common.mixins.json"
+  ],
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "mynx",
+    "version": "${version}",
+    "metadata": {
+      "name": ";YMX",
+      "description": "The official companion mod for the MYNX Server Scanner: find new servers without ever leaving Minecraft!",
+      "contributors": {
+        "veronoicc": "Owner"
+      },
+      "contact": {
+        "homepage": "https://mynx.lol",
+        "sources": "https://github.com/veronoicc/mynx-mod"
+      },
+      "icon": "assets/mynx/icon.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "init": [
+        "net.examplemod.quilt.ExampleModQuilt"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.20.4"
+      },
+      {
+        "id": "architectury",
+        "version": ">=11.0.9"
+      }
+    ]
+  },
+  "minecraft": {
+    "environment": "*"
+  }
+}

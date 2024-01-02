@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "pet.jinx.mynx.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+    "ClientHandshakePacketListenerImplMixin",
+    "ConnectScreen$1Mixin",
+    "MinecraftAccessor",
+    "TitleScreenMixin"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

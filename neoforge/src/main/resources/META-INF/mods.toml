@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "mynx"
+version = "${version}"
+displayName = "MYNX"
+authors = "veronoicc"
+description = '''
+The official companion mod for the MYNX Server Scanner: find new servers without ever leaving Minecraft!
+'''
+logoFile = "assets/mynx/icon.png"
+
+[[dependencies.mynx]]
+modId = "neoforge"
+type = "required"
+versionRange = "[20.4.47-beta,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mynx]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.20.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mynx]]
+modId = "architectury"
+type = "required"
+versionRange = "[11.0.9,)"
+ordering = "AFTER"
+side = "BOTH"
